@@ -12,6 +12,9 @@
     "heroku-postbuild": "npm run build",
     "test": "jest"
   },
+  "jest": {
+    "setupTestFrameworkScriptFile": "./tests/setup.js"
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
@@ -22,6 +25,7 @@
     "dotenv": "^16.4.1",
     "express": "4.15.3",
     "jest": "23.6.0",
+    "keygrip": "^1.1.0",
     "migrate-mongoose": "3.2.2",
     "mongoose": "5.10.11",
     "nodemon": "1.11.0",
