@@ -27,6 +27,7 @@ jobs:
     env:
       NODE_ENV: ci
       PORT: 3000
+      SUPPRESS_JEST_WARNINGS: 1
       GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
       GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
       MONGODB_URI: ${{ secrets.MONGODB_URI }}
