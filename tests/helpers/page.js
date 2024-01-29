@@ -2,8 +2,6 @@ const puppeteer = require('puppeteer');
 const sessionFactory = require('../factories/sessionFactory');
 const userFactory = require('../factories/userFactory');
 
-jest.useFakeTimers('legacy');
-
 class CustomPage {
     static async build() {
         const browser = await puppeteer.launch({
