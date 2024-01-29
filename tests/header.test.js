@@ -26,4 +26,5 @@ test('When signed in it should show logout button', async () => {
     await page.login();
     const text = await page.getContentsOf('a[href="/auth/logout"]');
     expect(text).toBe('Logout');
+    await page.click('a[href="/auth/logout"]');
 });
