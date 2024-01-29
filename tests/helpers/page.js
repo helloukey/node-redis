@@ -5,7 +5,7 @@ const userFactory = require('../factories/userFactory');
 class CustomPage {
     static async build() {
         const browser = await puppeteer.launch({
-            executablePath: '/usr/bin/chromium-browser',
+            // executablePath: '/usr/bin/chromium-browser',
             headless: true,
         })
         const page = await browser.newPage();
