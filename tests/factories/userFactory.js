@@ -1,10 +1,5 @@
 const mongoose = require('mongoose');
-const { Schema } = mongoose;
-const userSchema = new Schema({
-    googleId: String,
-    displayName: String
-  });
-const User = mongoose.model('User', userSchema);
+const User = mongoose.model('User');
 
 module.exports = async () => {
     return new User({}).save();
