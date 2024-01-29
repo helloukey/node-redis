@@ -3,7 +3,7 @@ require('dotenv').config();
 module.exports = {
   googleClientID: process.env.GOOGLE_CLIENT_ID,
   googleClientSecret: process.env.GOOGLE_CLIENT_SECRET,
-  mongoURI: 'mongodb:127.0.0.1:27017/blog_ci',
+  mongoURI: process.env.MONGODB_URI,
   cookieKey: process.env.COOKIE_KEY,
   redisUrl: process.env.REDIS_URI,
 };
